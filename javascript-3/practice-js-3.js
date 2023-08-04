@@ -1,12 +1,12 @@
 //////////////////STEP 1////////////////////
 /* Create an array called 'groceries' that contains three grocery items of your choice as strings. */
 
-//CODE HERE
+let groceries = ['pickles', 'pizza', 'pineapple']
 
 //////////////////STEP 2////////////////////
 /* Create a variable called 'yourName' that is assigned the value of your name as a string. */
 
-//CODE HERE
+let yourName = 'Caleb'
 
 //////////////////STEP 3////////////////////
 /*
@@ -16,7 +16,10 @@
     the function would return 'Joseph's Grocery List'.
 */
 
-//CODE HERE
+function setGroceryListTitle(x){
+    return `${x}'s Grocery List`
+}
+
 
 //////////////////STEP 4////////////////////
 /* 
@@ -26,7 +29,10 @@
     that takes care of some of the work for getting your page to display correctly.
 */
 
-//CODE HERE
+function addItem(item){
+    groceries.push(item)
+    displayData()
+}
 
 //////////////////STEP 5////////////////////
 /*
@@ -36,8 +42,9 @@
     Then, invoke the displayData() function inside of your removeItem function.
 */
 
-//CODE HERE
-
+function removeItem(index){
+    groceries.splice(index, 1)
+}
 //////////////////STEP 6////////////////////
 /*
     Create a function called 'checkGroceryCount'. Inside of checkGroceryCount, 
@@ -49,7 +56,15 @@
     with NUMBEROFGROCERIES replaced by the number of items in your groceries array.
 */
 
-//CODE HERE
+function checkGroceryCount(){
+    if(groceries.length > 5){
+        return 'That looks like a big trip'
+    } else if(groceries.length === 1){
+        return '1 item'
+    } else {
+        return `${groceries.length} items`
+    }
+}
 
 //////////////////Check out your code!////////////////////
 /*
