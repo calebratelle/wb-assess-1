@@ -34,9 +34,9 @@ const gitHubDefinition = 'GitHub is a database which can be used to store our it
 */
 
 const init = {
-    description: '',
-    code: '',
-    
+    description: 'git init initializes git.',
+    code: 'git init',
+
 }
 
 //////////////////PROBLEM 4////////////////////
@@ -45,7 +45,10 @@ const init = {
     following the guidelines above to describe the clone command.
 */
 
-//CODE HERE
+const clone = {
+    description: 'clone allows us to copy code from git.',
+    code: 'git clone'
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -53,7 +56,10 @@ const init = {
     following the guidelines above to describe the status command.
 */
 
-//CODE HERE
+const status = {
+    description: 'status gives us the status of our iteration with git',
+    code: 'git status'
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -61,7 +67,10 @@ const init = {
     following the guidelines above to describe the add command.
 */
 
-//CODE HERE
+const add = {
+    description: 'add puts our work "on stage" ',
+    code: 'git add .'
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -69,7 +78,10 @@ const init = {
     following the guidelines above to describe the commit command.
 */
 
-//CODE HERE
+const commit = {
+    description: 'commit saves a version of our work.',
+    code: 'git commit -m with comment to accompany'
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -77,7 +89,10 @@ const init = {
     following the guidelines above to describe the command to add a remote location to your git repository.
 */
 
-//CODE HERE
+const addRemote = {
+    description: 'lets us add to the online repository',
+    code: 'git remote add origin'
+}
 
 //////////////////PROBLEM 9////////////////////
 /*
@@ -85,4 +100,7 @@ const init = {
     following the guidelines above to describe the push command.
 */
 
-//CODE HERE
+const push = {
+    description: 'Push takes our commit and pushed it to GitHub.com',
+    code: 'git push'
+}
