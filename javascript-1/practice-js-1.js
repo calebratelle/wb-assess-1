@@ -102,7 +102,7 @@ let middleNums = numbers.slice(1,(numbers.length-1))
   For example: 'Hello! My name is Joseph and I live in Utah"
 */
 
-/*const me {
+const me = {
   firstName:'Caleb',
   state:'Utah',
   age:29,
@@ -110,7 +110,7 @@ let middleNums = numbers.slice(1,(numbers.length-1))
     return `Hello! My name is ${me.firstName} and I live in ${me.state}`
   }
 }
-*/
+
 
 //////////////////PROBLEM 12////////////////////
 /* 
@@ -224,12 +224,11 @@ function isItBob(obj, cb) {
   Then invoke the callback, passing in the doubled array.
 */
 
-function giveMeDoubles(arr, cb){
-  for(let i=0; i<arr.length; i++){
-    arr.splice(i, 0, [i])
-    i++
+function giveMeDoubles(nums, cb){
+  for(let i=0; i<nums.length; i++){
+    nums[i]*=2
   }
-  cb(arr)
+  cb(nums)
 }
 
 //////////////////PROBLEM 18////////////////////
@@ -258,14 +257,15 @@ function giveMeDoubles(arr, cb){
 */
 
 function carFactory(make, model, year){
-  let obj= {
-    make: make,
-    model: model,
-    year: year
+  const car= {
+    make,
+    model,
+    year
   }
   if(year > 2018){
-    obj.isNew = true
-  }else {
-    obj.isNew = false
+    car.isNew = true
+  } else {
+    car.isNew = false
   }
+  return car
 }
